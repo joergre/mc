@@ -1,0 +1,2 @@
+# Generated via Docker on Sat May 28 17:18:58 UTC 2016
+eula=TRUE

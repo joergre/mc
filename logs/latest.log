@@ -1,0 +1,67 @@
+[17:57:11] [Server thread/INFO]: Starting minecraft server version 1.8
+[17:57:12] [Server thread/INFO]: Loading properties
+[17:57:12] [Server thread/INFO]: Default game type: SURVIVAL
+[17:57:12] [Server thread/INFO]: Generating keypair
+[17:57:12] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:57:13] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-7019900 (MC: 1.8) (Implementing API version 1.8-R0.1-SNAPSHOT)
+[17:57:13] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+[17:57:13] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.2;b3fbe8b
+[17:57:13] [Server thread/INFO]: [Modifyworld] Loading Modifyworld v1.19.7
+[17:57:13] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1
+[17:57:14] [Server thread/INFO]: Preparing level "world"
+[17:57:14] [Server thread/INFO]: Preparing start region for level 0 (Seed: -8808906062681901098)
+[17:57:15] [Server thread/INFO]: Preparing spawn area: 31%
+[17:57:16] [Server thread/INFO]: Preparing spawn area: 97%
+[17:57:16] [Server thread/INFO]: Preparing start region for level 1 (Seed: 1768239694320923305)
+[17:57:17] [Server thread/INFO]: Preparing spawn area: 23%
+[17:57:18] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1768239694320923305)
+[17:57:18] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
+[17:57:18] [Server thread/INFO]: [PermissionsEx] Initializing file backend
+[17:57:18] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
+[17:57:19] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.2;b3fbe8b
+[17:57:20] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+[17:57:20] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R1 as the Bukkit adapter
+[17:57:20] [Server thread/INFO]: [Modifyworld] Enabling Modifyworld v1.19.7
+[17:57:20] [Server thread/INFO]: [Modifyworld] Modifyworld enabled!
+[17:57:20] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[17:57:20] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is blocked.
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[17:57:20] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is blocked.
+[17:57:20] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[17:57:20] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[17:57:20] [Server thread/INFO]: [WorldGuard] Loading region data...
+[17:57:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:57:21] [Server thread/INFO]: Done (6.609s)! For help, type "help" or "?"
+[17:58:18] [User Authenticator #1/INFO]: UUID of player die_mandarine is 0914540e-d544-42d4-998e-eeb373576c1e
+[17:58:18] [Server thread/INFO]: die_mandarine[/87.145.31.55:62829] logged in with entity id 517 at ([world] 389.5, 63.0, 28.5)
+[17:58:35] [Server thread/INFO]: die_mandarine lost connection: Disconnected
+[17:58:35] [Server thread/INFO]: die_mandarine left the game.
+[17:58:40] [User Authenticator #2/INFO]: UUID of player die_mandarine is 0914540e-d544-42d4-998e-eeb373576c1e
+[17:58:40] [Server thread/INFO]: die_mandarine[/87.145.31.55:62857] logged in with entity id 1511 at ([world] 408.3180092058104, 63.0, 11.896562498431539)
+[17:59:32] [Server thread/INFO]: die_mandarine issued server command: /gamemode 1#
+[17:59:35] [Server thread/INFO]: die_mandarine issued server command: /gamemode 1
+[17:59:35] [Server thread/INFO]: [die_mandarine: Set own game mode to Creative Mode]
+[18:02:56] [Server thread/INFO]: die_mandarine has just earned the achievement [Taking Inventory]
+[18:06:55] [Server thread/INFO]: die_mandarine issued server command: /gamemode 3
+[18:06:55] [Server thread/INFO]: [die_mandarine: Set own game mode to Spectator Mode]
+[18:07:28] [Server thread/INFO]: die_mandarine issued server command: /gamemode 1
+[18:07:28] [Server thread/INFO]: [die_mandarine: Set own game mode to Creative Mode]
+[18:12:12] [Server thread/INFO]: die_mandarine issued server command: /gamemode 3
+[18:12:12] [Server thread/INFO]: [die_mandarine: Set own game mode to Spectator Mode]
+[18:14:01] [Server thread/INFO]: die_mandarine issued server command: /gamemode 1
+[18:14:01] [Server thread/INFO]: [die_mandarine: Set own game mode to Creative Mode]
+[18:17:53] [Server thread/INFO]: die_mandarine issued server command: /toggledownfall 1
+[18:17:53] [Server thread/INFO]: [die_mandarine: Toggled downfall]
+[18:23:42] [Server thread/INFO]: die_mandarine lost connection: Disconnected
+[18:23:42] [Server thread/INFO]: die_mandarine left the game.
+[22:38:29] [Thread-3/INFO]: Stopping server
