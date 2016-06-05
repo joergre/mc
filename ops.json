@@ -5,13 +5,28 @@
     "level": 4
   },
   {
+    "uuid": "9f91a88b-83f2-45d7-b935-9ddc877ba286",
+    "name": "der_mandarine",
+    "level": 4
+  },
+  {
     "uuid": "0914540e-d544-42d4-998e-eeb373576c1e",
     "name": "die_mandarine",
     "level": 4
   },
   {
+    "uuid": "869c2a89-43b0-41a8-8656-67a2cc8c7923",
+    "name": "X",
+    "level": 4
+  },
+  {
     "uuid": "578a5a07-b1af-46c8-98c0-eda47c439280",
     "name": "xplayerTIM",
+    "level": 4
+  },
+  {
+    "uuid": "87533cda-a7f2-4b05-bd0b-486c89aef89e",
+    "name": "Herr_Robin",
     "level": 4
   }
 ]

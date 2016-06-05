@@ -1,91 +1,43 @@
-[15:43:02] [Server thread/INFO]: Starting minecraft server version 1.8
-[15:43:02] [Server thread/INFO]: Loading properties
-[15:43:02] [Server thread/INFO]: Default game type: SURVIVAL
-[15:43:02] [Server thread/INFO]: Generating keypair
-[15:43:02] [Server thread/INFO]: Starting Minecraft server on *:25565
-[15:43:03] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-7019900 (MC: 1.8) (Implementing API version 1.8-R0.1-SNAPSHOT)
-[15:43:04] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
-[15:43:04] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.2;b3fbe8b
-[15:43:04] [Server thread/INFO]: [Modifyworld] Loading Modifyworld v1.19.7
-[15:43:04] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1
-[15:43:04] [Server thread/INFO]: Preparing level "world"
-[15:43:04] [Server thread/INFO]: Preparing start region for level 0 (Seed: -8808906062681901098)
-[15:43:05] [Server thread/INFO]: Preparing spawn area: 10%
-[15:43:06] [Server thread/INFO]: Preparing spawn area: 30%
-[15:43:07] [Server thread/INFO]: Preparing spawn area: 65%
-[15:43:08] [Server thread/INFO]: Preparing spawn area: 96%
-[15:43:08] [Server thread/INFO]: Preparing start region for level 1 (Seed: 1768239694320923305)
-[15:43:09] [Server thread/INFO]: Preparing spawn area: 32%
-[15:43:10] [Server thread/INFO]: Preparing spawn area: 65%
-[15:43:11] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1768239694320923305)
-[15:43:11] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
-[15:43:11] [Server thread/INFO]: [PermissionsEx] Initializing file backend
-[15:43:11] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
-[15:43:11] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.2;b3fbe8b
-[15:43:13] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
-[15:43:13] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R1 as the Bukkit adapter
-[15:43:13] [Server thread/INFO]: [Modifyworld] Enabling Modifyworld v1.19.7
-[15:43:13] [Server thread/INFO]: [Modifyworld] Modifyworld enabled!
-[15:43:13] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
-[15:43:14] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is blocked.
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
-[15:43:14] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is blocked.
-[15:43:14] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
-[15:43:14] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
-[15:43:14] [Server thread/INFO]: [WorldGuard] Loading region data...
-[15:43:14] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[15:43:14] [Server thread/INFO]: Done (10.695s)! For help, type "help" or "?"
-[15:43:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3220ms behind, skipping 64 tick(s)
-[15:43:52] [User Authenticator #1/INFO]: UUID of player die_mandarine is 0914540e-d544-42d4-998e-eeb373576c1e
-[15:43:52] [Server thread/INFO]: die_mandarine[/93.212.117.171:60278] logged in with entity id 582 at ([world] 434.69999998807907, 68.0, 14.904072071253367)
-[15:44:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5010ms behind, skipping 100 tick(s)
-[15:44:44] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2777ms behind, skipping 55 tick(s)
-[15:47:18] [Server thread/INFO]: die_mandarine issued server command: //set 0
-[15:47:44] [User Authenticator #2/INFO]: UUID of player papa_mandarine is 7b17f1f1-8c50-49b3-9172-c4b977197546
-[15:47:44] [Server thread/INFO]: papa_mandarine[/93.212.117.171:34971] logged in with entity id 18735 at ([world] 401.5, 63.0, 23.5)
-[15:47:51] [Server thread/INFO]: die_mandarine issued server command: //set
-[15:48:09] [Server thread/INFO]: die_mandarine issued server command: //set 2 4
-[15:48:14] [Server thread/INFO]: die_mandarine issued server command: //set 2 4
-[15:48:22] [Server thread/INFO]: die_mandarine issued server command: //set 1 4
-[15:48:37] [Server thread/INFO]: die_mandarine issued server command: //set 1:4
-[15:49:29] [Server thread/INFO]: die_mandarine issued server command: //undo
-[15:49:30] [Server thread/INFO]: die_mandarine issued server command: //undo
-[15:49:32] [Server thread/INFO]: die_mandarine issued server command: //undo
-[15:49:33] [Server thread/INFO]: die_mandarine issued server command: //undo
-[15:49:34] [Server thread/INFO]: die_mandarine issued server command: //undo
-[15:49:37] [Server thread/INFO]: die_mandarine issued server command: //undo
-[15:49:59] [Server thread/INFO]: die_mandarine issued server command: //set 87
-[15:50:02] [Server thread/INFO]: papa_mandarine tried to swim in lava
-[15:50:04] [Server thread/INFO]: die_mandarine issued server command: //set 79
-[15:50:08] [Server thread/INFO]: die_mandarine issued server command: //set 89
-[15:52:10] [Server thread/INFO]: papa_mandarine has just earned the achievement [Taking Inventory]
-[15:52:21] [Server thread/INFO]: papa_mandarine was slain by Zombie
-[15:52:51] [Server thread/INFO]: papa_mandarine was slain by Zombie
-[15:53:26] [Server thread/INFO]: papa_mandarine was slain by Zombie
-[15:54:32] [Server thread/INFO]: papa_mandarine was slain by Zombie
-[15:55:23] [Server thread/INFO]: papa_mandarine was slain by Enderman
-[15:55:48] [Server thread/INFO]: papa_mandarine was slain by Zombie
-[15:57:00] [Server thread/INFO]: papa_mandarine lost connection: Disconnected
-[15:57:00] [Server thread/INFO]: papa_mandarine left the game.
-[15:58:56] [User Authenticator #3/INFO]: UUID of player papa_mandarine is 7b17f1f1-8c50-49b3-9172-c4b977197546
-[15:58:56] [Server thread/INFO]: papa_mandarine[/93.212.117.171:34975] logged in with entity id 30634 at ([world] 397.5, 63.0, 19.5)
-[15:59:25] [Server thread/INFO]: papa_mandarine was slain by Zombie
-[16:16:13] [Server thread/INFO]: papa_mandarine lost connection: Internal Exception: io.netty.handler.timeout.ReadTimeoutException
-[16:16:13] [Server thread/INFO]: papa_mandarine left the game.
-[16:16:47] [Server thread/INFO]: die_mandarine lost connection: Disconnected
-[16:16:47] [Server thread/INFO]: die_mandarine left the game.
-[16:41:18] [User Authenticator #4/INFO]: UUID of player die_mandarine is 0914540e-d544-42d4-998e-eeb373576c1e
-[16:41:18] [Server thread/INFO]: die_mandarine[/93.212.117.171:61186] logged in with entity id 49871 at ([world] 458.4420053475023, 83.5, 34.79778763056301)
-[16:54:02] [Server thread/INFO]: die_mandarine lost connection: Disconnected
-[16:54:02] [Server thread/INFO]: die_mandarine left the game.
-[22:54:45] [Thread-3/INFO]: Stopping server
+[16:31:26] [User Authenticator #25/INFO]: UUID of player die_mandarine is 0914540e-d544-42d4-998e-eeb373576c1e
+[16:31:26] [Server thread/INFO]: die_mandarine[/87.145.1.128:61722] logged in with entity id 2861744 at ([world] 520.3000000119209, 61.0, 94.30000001192087)
+[16:31:36] [Server thread/INFO]: die_mandarine issued server command: /gamemode 1
+[16:31:36] [Server thread/INFO]: [die_mandarine: Set own game mode to Creative Mode]
+[16:33:29] [Server thread/INFO]: die_mandarine lost connection: Disconnected
+[16:33:29] [Server thread/INFO]: die_mandarine left the game.
+[17:33:58] [User Authenticator #26/INFO]: UUID of player xplayerTIM is 578a5a07-b1af-46c8-98c0-eda47c439280
+[17:33:58] [Server thread/INFO]: xplayerTIM[/93.212.126.153:60023] logged in with entity id 2939840 at ([world] 412.2534095642596, 68.0, -86.11642587007451)
+[17:34:07] [Server thread/INFO]: <xplayerTIM> .seed
+[17:34:12] [Server thread/INFO]: xplayerTIM issued server command: /toggledownfall
+[17:34:12] [Server thread/INFO]: [xplayerTIM: Toggled downfall]
+[17:34:24] [Server thread/INFO]: xplayerTIM issued server command: /time set day
+[17:34:24] [Server thread/INFO]: [xplayerTIM: Set the time to 1000]
+[17:36:09] [User Authenticator #27/INFO]: UUID of player die_mandarine is 0914540e-d544-42d4-998e-eeb373576c1e
+[17:36:09] [Server thread/INFO]: die_mandarine[/87.145.1.128:54674] logged in with entity id 3021336 at ([world] 428.8383084227671, 66.0, -48.70222604957768)
+[17:36:11] [Server thread/INFO]: <xplayerTIM> hi
+[17:36:22] [Server thread/INFO]: <die_mandarine> hi
+[17:36:35] [Server thread/INFO]: die_mandarine issued server command: /tp xplayerTIM
+[17:36:35] [Server thread/INFO]: [die_mandarine: Teleported die_mandarine to xplayerTIM]
+[17:36:47] [Server thread/INFO]: xplayerTIM issued server command: /effect @a minecraft:night_vision 1000000 255 1000000
+[17:36:47] [Server thread/INFO]: [xplayerTIM: Given Night Vision (ID 16) * 255 to xplayerTIM for 1000000 seconds]
+[17:36:47] [Server thread/INFO]: [xplayerTIM: Given Night Vision (ID 16) * 255 to die_mandarine for 1000000 seconds]
+[17:38:46] [Server thread/INFO]: xplayerTIM issued server command: /gamemode 3
+[17:38:46] [Server thread/INFO]: [xplayerTIM: Set own game mode to Spectator Mode]
+[17:39:00] [Server thread/INFO]: xplayerTIM issued server command: /tp xplayerTIM die_mandarine
+[17:39:00] [Server thread/INFO]: [xplayerTIM: Teleported xplayerTIM to die_mandarine]
+[17:39:33] [Server thread/INFO]: xplayerTIM issued server command: /summon Creeper
+[17:39:33] [Server thread/INFO]: [xplayerTIM: Object successfully summoned]
+[17:39:44] [Server thread/INFO]: xplayerTIM issued server command: /difficulty 1
+[17:39:44] [Server thread/INFO]: [xplayerTIM: Set game difficulty to Easy]
+[17:39:46] [Server thread/INFO]: xplayerTIM issued server command: /summon Creeper
+[17:39:46] [Server thread/INFO]: [xplayerTIM: Object successfully summoned]
+[17:40:06] [Server thread/INFO]: xplayerTIM issued server command: /gamemode 1
+[17:40:06] [Server thread/INFO]: [xplayerTIM: Set own game mode to Creative Mode]
+[17:40:19] [Server thread/INFO]: xplayerTIM issued server command: /gamemode 0 die_mandarine
+[17:40:19] [Server thread/INFO]: [xplayerTIM: Set die_mandarine's game mode to Survival Mode]
+[17:40:33] [Server thread/INFO]: xplayerTIM issued server command: /tp xplayerTIM die_mandarine
+[17:40:33] [Server thread/INFO]: [xplayerTIM: Teleported xplayerTIM to die_mandarine]
+[17:40:50] [Server thread/INFO]: die_mandarine was slain by xplayerTIM
+[17:40:57] [Server thread/INFO]: die_mandarine lost connection: Internal Exception: io.netty.handler.timeout.ReadTimeoutException
+[17:40:57] [Server thread/INFO]: die_mandarine left the game.
+[17:41:01] [Server thread/INFO]: xplayerTIM lost connection: Disconnected
+[17:41:01] [Server thread/INFO]: xplayerTIM left the game.
