@@ -1,0 +1,57 @@
+[13:03:21] [Server thread/INFO]: Starting minecraft server version 1.8
+[13:03:21] [Server thread/INFO]: Loading properties
+[13:03:21] [Server thread/INFO]: Default game type: SURVIVAL
+[13:03:21] [Server thread/INFO]: Generating keypair
+[13:03:21] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:03:25] [Server thread/WARN]: Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+[13:03:25] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-7019900 (MC: 1.8) (Implementing API version 1.8-R0.1-SNAPSHOT)
+[13:03:25] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+[13:03:25] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.2;b3fbe8b
+[13:03:25] [Server thread/INFO]: [Modifyworld] Loading Modifyworld v1.19.7
+[13:03:25] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1
+[13:03:25] [Server thread/INFO]: Preparing level "world"
+[13:03:26] [Server thread/INFO]: Preparing start region for level 0 (Seed: -8982136277206233159)
+[13:03:27] [Server thread/INFO]: Preparing spawn area: 19%
+[13:03:28] [Server thread/INFO]: Preparing spawn area: 49%
+[13:03:29] [Server thread/INFO]: Preparing spawn area: 94%
+[13:03:29] [Server thread/INFO]: Preparing start region for level 1 (Seed: 1768239694320923305)
+[13:03:30] [Server thread/INFO]: Preparing spawn area: 53%
+[13:03:31] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1768239694320923305)
+[13:03:31] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
+[13:03:31] [Server thread/INFO]: [PermissionsEx] Initializing file backend
+[13:03:31] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
+[13:03:31] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.2;b3fbe8b
+[13:03:32] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+[13:03:32] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R1 as the Bukkit adapter
+[13:03:32] [Server thread/INFO]: [Modifyworld] Enabling Modifyworld v1.19.7
+[13:03:32] [Server thread/INFO]: [Modifyworld] Modifyworld enabled!
+[13:03:32] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[13:03:33] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is blocked.
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[13:03:33] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is blocked.
+[13:03:33] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[13:03:33] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[13:03:33] [Server thread/INFO]: [WorldGuard] Loading region data...
+[13:03:33] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:03:33] [Server thread/INFO]: Done (7.718s)! For help, type "help" or "?"
+[13:03:55] [User Authenticator #1/INFO]: UUID of player die_mandarine is 0914540e-d544-42d4-998e-eeb373576c1e
+[13:03:55] [Server thread/INFO]: die_mandarine[/87.145.24.84:55813] logged in with entity id 122 at ([world] 159.06824373983915, 64.0, 22.2314087990031)
+[13:05:01] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2175ms behind, skipping 43 tick(s)
+[13:17:02] [Server thread/INFO]: die_mandarine lost connection: Disconnected
+[13:17:02] [Server thread/INFO]: die_mandarine left the game.
+[13:43:43] [User Authenticator #2/INFO]: UUID of player die_mandarine is 0914540e-d544-42d4-998e-eeb373576c1e
+[13:43:44] [Server thread/INFO]: die_mandarine[/87.145.24.84:56581] logged in with entity id 7800 at ([world] 236.43460746181353, 71.53869302010119, 57.13210352684405)
+[13:45:21] [Server thread/INFO]: die_mandarine has just earned the achievement [Taking Inventory]
+[13:45:37] [Server thread/INFO]: die_mandarine fell out of the world
+[13:45:47] [Server thread/INFO]: die_mandarine lost connection: Disconnected
+[13:45:47] [Server thread/INFO]: die_mandarine left the game.
