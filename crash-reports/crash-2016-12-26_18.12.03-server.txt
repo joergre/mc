@@ -1,0 +1,307 @@
+---- Minecraft Crash Report ----
+// On the bright side, I bought you a teddy bear!
+
+Time: 12/26/16 6:12 PM
+Description: Watching Server
+
+java.lang.Error
+	at org.bukkit.craftbukkit.v1_8_R1.util.LongHashSet.remove(LongHashSet.java:137)
+	at org.bukkit.craftbukkit.v1_8_R1.util.LongHashSet.remove(LongHashSet.java:128)
+	at net.minecraft.server.v1_8_R1.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:99)
+	at net.minecraft.server.v1_8_R1.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:95)
+	at org.bukkit.craftbukkit.v1_8_R1.CraftWorld.getChunkAt(CraftWorld.java:124)
+	at org.bukkit.craftbukkit.v1_8_R1.CraftWorld.getBlockAt(CraftWorld.java:88)
+	at com.sk89q.worldedit.bukkit.BukkitWorld.getLazyBlock(BukkitWorld.java:427)
+	at com.sk89q.worldedit.world.AbstractWorld.getBlockType(AbstractWorld.java:113)
+	at com.sk89q.worldedit.EditSession.getBlockType(EditSession.java:428)
+	at com.sk89q.worldedit.EditSession.simulateSnow(EditSession.java:1641)
+	at com.sk89q.worldedit.command.UtilityCommands.snow(UtilityCommands.java:304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sk89q.worldedit.util.command.parametric.ParametricCallable.call(ParametricCallable.java:243)
+	at com.sk89q.worldedit.util.command.SimpleDispatcher.call(SimpleDispatcher.java:125)
+	at com.sk89q.worldedit.extension.platform.CommandManager.handleCommand(CommandManager.java:270)
+	at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sk89q.worldedit.util.eventbus.MethodEventHandler.dispatch(MethodEventHandler.java:58)
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73)
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:187)
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:173)
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:247)
+	at com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:54)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:140)
+	at org.bukkit.craftbukkit.v1_8_R1.CraftServer.dispatchCommand(CraftServer.java:625)
+	at net.minecraft.server.v1_8_R1.PlayerConnection.handleCommand(PlayerConnection.java:1058)
+	at net.minecraft.server.v1_8_R1.PlayerConnection.a(PlayerConnection.java:919)
+	at net.minecraft.server.v1_8_R1.PacketPlayInChat.a(SourceFile:37)
+	at net.minecraft.server.v1_8_R1.PacketPlayInChat.a(SourceFile:9)
+	at net.minecraft.server.v1_8_R1.PacketHandleTask.run(SourceFile:13)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at net.minecraft.server.v1_8_R1.MinecraftServer.z(MinecraftServer.java:656)
+	at net.minecraft.server.v1_8_R1.DedicatedServer.z(DedicatedServer.java:284)
+	at net.minecraft.server.v1_8_R1.MinecraftServer.y(MinecraftServer.java:609)
+	at net.minecraft.server.v1_8_R1.MinecraftServer.run(MinecraftServer.java:517)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at org.bukkit.craftbukkit.v1_8_R1.util.LongHashSet.remove(LongHashSet.java:137)
+	at org.bukkit.craftbukkit.v1_8_R1.util.LongHashSet.remove(LongHashSet.java:128)
+	at net.minecraft.server.v1_8_R1.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:99)
+	at net.minecraft.server.v1_8_R1.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:95)
+	at org.bukkit.craftbukkit.v1_8_R1.CraftWorld.getChunkAt(CraftWorld.java:124)
+	at org.bukkit.craftbukkit.v1_8_R1.CraftWorld.getBlockAt(CraftWorld.java:88)
+	at com.sk89q.worldedit.bukkit.BukkitWorld.getLazyBlock(BukkitWorld.java:427)
+	at com.sk89q.worldedit.world.AbstractWorld.getBlockType(AbstractWorld.java:113)
+	at com.sk89q.worldedit.EditSession.getBlockType(EditSession.java:428)
+	at com.sk89q.worldedit.EditSession.simulateSnow(EditSession.java:1641)
+	at com.sk89q.worldedit.command.UtilityCommands.snow(UtilityCommands.java:304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sk89q.worldedit.util.command.parametric.ParametricCallable.call(ParametricCallable.java:243)
+	at com.sk89q.worldedit.util.command.SimpleDispatcher.call(SimpleDispatcher.java:125)
+	at com.sk89q.worldedit.extension.platform.CommandManager.handleCommand(CommandManager.java:270)
+	at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sk89q.worldedit.util.eventbus.MethodEventHandler.dispatch(MethodEventHandler.java:58)
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73)
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:187)
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:173)
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:247)
+	at com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:54)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:140)
+	at org.bukkit.craftbukkit.v1_8_R1.CraftServer.dispatchCommand(CraftServer.java:625)
+	at net.minecraft.server.v1_8_R1.PlayerConnection.handleCommand(PlayerConnection.java:1058)
+	at net.minecraft.server.v1_8_R1.PlayerConnection.a(PlayerConnection.java:919)
+	at net.minecraft.server.v1_8_R1.PacketPlayInChat.a(SourceFile:37)
+	at net.minecraft.server.v1_8_R1.PacketPlayInChat.a(SourceFile:9)
+	at net.minecraft.server.v1_8_R1.PacketHandleTask.run(SourceFile:13)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at net.minecraft.server.v1_8_R1.MinecraftServer.z(MinecraftServer.java:656)
+	at net.minecraft.server.v1_8_R1.DedicatedServer.z(DedicatedServer.java:284)
+	at net.minecraft.server.v1_8_R1.MinecraftServer.y(MinecraftServer.java:609)
+
+-- Thread Dump --
+Details:
+	Threads: "pool-12-thread-3" Id=48 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@46885eb
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@46885eb
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:522)
+	at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:684)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	...
+
+
+"Chunk I/O Executor Thread-1" Id=43 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@aaf6b16
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@aaf6b16
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"File IO Thread" Id=42 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.server.v1_8_R1.FileIOThread.c(SourceFile:51)
+	at net.minecraft.server.v1_8_R1.FileIOThread.run(SourceFile:30)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Server IO #3" Id=23 BLOCKED on java.util.ArrayDeque@e90ee9b owned by "Server thread" Id=14
+	at net.minecraft.server.v1_8_R1.MinecraftServer.a(MinecraftServer.java:1440)
+	-  blocked on java.util.ArrayDeque@e90ee9b
+	at net.minecraft.server.v1_8_R1.MinecraftServer.postToMainThread(MinecraftServer.java:1455)
+	at net.minecraft.server.v1_8_R1.WorldServer.postToMainThread(WorldServer.java:1134)
+	at net.minecraft.server.v1_8_R1.PlayerConnectionUtils.ensureMainThread(SourceFile:10)
+	at net.minecraft.server.v1_8_R1.PlayerConnection.a(PlayerConnection.java:184)
+	at net.minecraft.server.v1_8_R1.PacketPlayInFlying.a(SourceFile:126)
+	at net.minecraft.server.v1_8_R1.PacketPlayInFlying.a(SourceFile:8)
+	at net.minecraft.server.v1_8_R1.NetworkManager.a(NetworkManager.java:75)
+	...
+
+
+"Netty Server IO #2" Id=22 RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@4b92612d
+	-  locked java.util.Collections$UnmodifiableSet@b15f269
+	-  locked sun.nio.ch.EPollSelectorImpl@7a93cfc6
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:618)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:306)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	...
+
+
+"Netty Server IO #1" Id=21 BLOCKED on java.util.ArrayDeque@e90ee9b owned by "Server thread" Id=14
+	at net.minecraft.server.v1_8_R1.MinecraftServer.a(MinecraftServer.java:1440)
+	-  blocked on java.util.ArrayDeque@e90ee9b
+	at net.minecraft.server.v1_8_R1.MinecraftServer.postToMainThread(MinecraftServer.java:1455)
+	at net.minecraft.server.v1_8_R1.WorldServer.postToMainThread(WorldServer.java:1134)
+	at net.minecraft.server.v1_8_R1.PlayerConnectionUtils.ensureMainThread(SourceFile:10)
+	at net.minecraft.server.v1_8_R1.PlayerConnection.a(PlayerConnection.java:1778)
+	at net.minecraft.server.v1_8_R1.PacketPlayInAbilities.a(SourceFile:70)
+	at net.minecraft.server.v1_8_R1.PacketPlayInAbilities.a(SourceFile:9)
+	at net.minecraft.server.v1_8_R1.NetworkManager.a(NetworkManager.java:75)
+	...
+
+
+"Server Watchdog" Id=34 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at net.minecraft.server.v1_8_R1.ThreadWatchdog.run(SourceFile:43)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Timer-1" Id=30 TIMED_WAITING on java.util.TaskQueue@73fe0239
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@73fe0239
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Timer-0" Id=27 TIMED_WAITING on java.util.TaskQueue@2bbd9e62
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@2bbd9e62
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Netty Server IO #0" Id=20 RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@f1fb7c6
+	-  locked java.util.Collections$UnmodifiableSet@6b96b41c
+	-  locked sun.nio.ch.EPollSelectorImpl@68fa8c9d
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:618)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:306)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	...
+
+
+"Thread-4" Id=18 RUNNABLE
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:326)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	-  locked java.io.BufferedOutputStream@2ff3416e
+	at java.io.PrintStream.write(PrintStream.java:451)
+	-  locked java.io.PrintStream@5d2062d1
+	at org.fusesource.jansi.AnsiOutputStream.write(AnsiOutputStream.java:82)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:125)
+	at java.io.PrintStream.write(PrintStream.java:480)
+	-  locked java.io.PrintStream@3480b3d
+	...
+
+
+"Server console handler" Id=17 RUNNABLE
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	-  locked java.io.BufferedInputStream@3f6af1ad
+	at org.bukkit.craftbukkit.libs.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:248)
+	at org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:261)
+	-  locked org.bukkit.craftbukkit.libs.jline.internal.NonBlockingInputStream@a272f1f
+	at org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:198)
+	-  locked org.bukkit.craftbukkit.libs.jline.internal.NonBlockingInputStream@a272f1f
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2145)
+	...
+
+
+"DestroyJavaVM" Id=16 RUNNABLE
+
+
+"Server thread" Id=14 RUNNABLE
+	at org.bukkit.craftbukkit.v1_8_R1.util.LongHashSet.remove(LongHashSet.java:137)
+	at org.bukkit.craftbukkit.v1_8_R1.util.LongHashSet.remove(LongHashSet.java:128)
+	at net.minecraft.server.v1_8_R1.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:99)
+	at net.minecraft.server.v1_8_R1.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:95)
+	at org.bukkit.craftbukkit.v1_8_R1.CraftWorld.getChunkAt(CraftWorld.java:124)
+	at org.bukkit.craftbukkit.v1_8_R1.CraftWorld.getBlockAt(CraftWorld.java:88)
+	at com.sk89q.worldedit.bukkit.BukkitWorld.getLazyBlock(BukkitWorld.java:427)
+	at com.sk89q.worldedit.world.AbstractWorld.getBlockType(AbstractWorld.java:113)
+	...
+
+
+"Server Infinisleeper" Id=15 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.server.v1_8_R1.ThreadSleepForever.run(SourceFile:64)
+
+
+"Snooper Timer" Id=11 TIMED_WAITING on java.util.TaskQueue@544ff260
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@544ff260
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@171d0a37
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@171d0a37
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@7f1276e0
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@7f1276e0
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+
+
+Stacktrace:
+	at net.minecraft.server.v1_8_R1.ThreadWatchdog.run(SourceFile:59)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Linux (amd64) version 4.7.3-coreos-r3
+	Java Version: 1.8.0_102, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 211406248 bytes (201 MB) / 1063780352 bytes (1014 MB) up to 1063780352 bytes (1014 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	CraftBukkit Information: 
+   Running: CraftBukkit version git-Bukkit-7019900 (MC: 1.8) (Implementing API version 1.8-R0.1-SNAPSHOT) true
+   Plugins: { PermissionsEx v1.23.4 ru.tehkode.permissions.bukkit.PermissionsEx [[t3hk0d3, zml]], WorldEdit v6.1.2;b3fbe8b com.sk89q.worldedit.bukkit.WorldEditPlugin [], Modifyworld v1.19.7 ru.tehkode.modifyworld.bukkit.Modifyworld [t3hk0d3], WorldGuard v6.1 com.sk89q.worldguard.bukkit.WorldGuardPlugin [],}
+   Warnings: DEFAULT
+   Reload Count: 0
+   Threads: { RUNNABLE Server thread: [com.sk89q.worldedit.extent.AbstractDelegateExtent.setBlock(AbstractDelegateExtent.java:78), com.sk89q.worldedit.extent.ChangeSetExtent.setBlock(ChangeSetExtent.java:64), com.sk89q.worldedit.extent.AbstractDelegateExtent.setBlock(AbstractDelegateExtent.java:78), com.sk89q.worldedit.extent.MaskingExtent.setBlock(MaskingExtent.java:69), com.sk89q.worldedit.extent.AbstractDelegateExtent.setBlock(AbstractDelegateExtent.java:78), com.sk89q.worldedit.extent.validation.BlockChangeLimiter.setBlock(BlockChangeLimiter.java:87), com.sk89q.worldedit.EditSession.setBlock(EditSession.java:503), com.sk89q.worldedit.EditSession.setBlock(EditSession.java:546), com.sk89q.worldedit.EditSession.simulateSnow(EditSession.java:1666), com.sk89q.worldedit.command.UtilityCommands.snow(UtilityCommands.java:304), sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method), sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62), sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.lang.reflect.Method.invoke(Method.java:498), com.sk89q.worldedit.util.command.parametric.ParametricCallable.call(ParametricCallable.java:243), com.sk89q.worldedit.util.command.SimpleDispatcher.call(SimpleDispatcher.java:125), com.sk89q.worldedit.extension.platform.CommandManager.handleCommand(CommandManager.java:270), sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source), sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.lang.reflect.Method.invoke(Method.java:498), com.sk89q.worldedit.util.eventbus.MethodEventHandler.dispatch(MethodEventHandler.java:58), com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73), com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:187), com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:173), com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:247), com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:54), org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:140), org.bukkit.craftbukkit.v1_8_R1.CraftServer.dispatchCommand(CraftServer.java:625), net.minecraft.server.v1_8_R1.PlayerConnection.handleCommand(PlayerConnection.java:1058), net.minecraft.server.v1_8_R1.PlayerConnection.a(PlayerConnection.java:919), net.minecraft.server.v1_8_R1.PacketPlayInChat.a(SourceFile:37), net.minecraft.server.v1_8_R1.PacketPlayInChat.a(SourceFile:9), net.minecraft.server.v1_8_R1.PacketHandleTask.run(SourceFile:13), java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511), java.util.concurrent.FutureTask.run(FutureTask.java:266), net.minecraft.server.v1_8_R1.MinecraftServer.z(MinecraftServer.java:656), net.minecraft.server.v1_8_R1.DedicatedServer.z(DedicatedServer.java:284), net.minecraft.server.v1_8_R1.MinecraftServer.y(MinecraftServer.java:609), net.minecraft.server.v1_8_R1.MinecraftServer.run(MinecraftServer.java:517), java.lang.Thread.run(Thread.java:745)], WAITING Chunk I/O Executor Thread-1: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617), java.lang.Thread.run(Thread.java:745)], WAITING Finalizer: [java.lang.Object.wait(Native Method), java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143), java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164), java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)], RUNNABLE Netty Server IO #2: [sun.nio.ch.EPollArrayWrapper.epollWait(Native Method), sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269), sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93), sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86), sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97), io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:618), io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:306), io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116), java.lang.Thread.run(Thread.java:745)], RUNNABLE Signal Dispatcher: [], TIMED_WAITING File IO Thread: [java.lang.Thread.sleep(Native Method), net.minecraft.server.v1_8_R1.FileIOThread.c(SourceFile:51), net.minecraft.server.v1_8_R1.FileIOThread.run(SourceFile:30), java.lang.Thread.run(Thread.java:745)], RUNNABLE Server console handler: [org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:228), org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:198), org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2145), org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLineSimple(ConsoleReader.java:3183), org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:2333), org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:2269), org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:2257), net.minecraft.server.v1_8_R1.ThreadCommandReader.run(ThreadCommandReader.java:35)], RUNNABLE DestroyJavaVM: [], RUNNABLE Netty Server IO #0: [sun.nio.ch.EPollArrayWrapper.epollWait(Native Method), sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269), sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93), sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86), sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97), io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:618), io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:306), io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116), java.lang.Thread.run(Thread.java:745)], WAITING Reference Handler: [java.lang.Object.wait(Native Method), java.lang.Object.wait(Object.java:502), java.lang.ref.Reference.tryHandlePending(Reference.java:191), java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)], BLOCKED Netty Server IO #3: [net.minecraft.server.v1_8_R1.MinecraftServer.a(MinecraftServer.java:1440), net.minecraft.server.v1_8_R1.MinecraftServer.postToMainThread(MinecraftServer.java:1455), net.minecraft.server.v1_8_R1.WorldServer.postToMainThread(WorldServer.java:1134), net.minecraft.server.v1_8_R1.PlayerConnectionUtils.ensureMainThread(SourceFile:10), net.minecraft.server.v1_8_R1.PlayerConnection.a(PlayerConnection.java:184), net.minecraft.server.v1_8_R1.PacketPlayInFlying.a(SourceFile:126), net.minecraft.server.v1_8_R1.PacketPlayInFlying.a(SourceFile:8), net.minecraft.server.v1_8_R1.NetworkManager.a(NetworkManager.java:75), net.minecraft.server.v1_8_R1.NetworkManager.channelRead0(NetworkManager.java:236), io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:103), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:163), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:163), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:163), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.handler.timeout.ReadTimeoutHandler.channelRead(ReadTimeoutHandler.java:150), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:787), io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125), io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:507), io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:464), io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:378), io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:350), io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116), java.lang.Thread.run(Thread.java:745)], TIMED_WAITING pool-12-thread-3: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078), java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:522), java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:684), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617), java.lang.Thread.run(Thread.java:745)], WAITING Thread-4: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), com.mojang.util.QueueLogAppender.getNextLogEvent(QueueLogAppender.java:77), org.bukkit.craftbukkit.v1_8_R1.util.TerminalConsoleWriterThread.run(TerminalConsoleWriterThread.java:25), java.lang.Thread.run(Thread.java:745)], BLOCKED Netty Server IO #1: [net.minecraft.server.v1_8_R1.MinecraftServer.a(MinecraftServer.java:1440), net.minecraft.server.v1_8_R1.MinecraftServer.postToMainThread(MinecraftServer.java:1455), net.minecraft.server.v1_8_R1.WorldServer.postToMainThread(WorldServer.java:1134), net.minecraft.server.v1_8_R1.PlayerConnectionUtils.ensureMainThread(SourceFile:10), net.minecraft.server.v1_8_R1.PlayerConnection.a(PlayerConnection.java:1778), net.minecraft.server.v1_8_R1.PacketPlayInAbilities.a(SourceFile:70), net.minecraft.server.v1_8_R1.PacketPlayInAbilities.a(SourceFile:9), net.minecraft.server.v1_8_R1.NetworkManager.a(NetworkManager.java:75), net.minecraft.server.v1_8_R1.NetworkManager.channelRead0(NetworkManager.java:236), io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:103), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:163), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:163), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:163), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.handler.timeout.ReadTimeoutHandler.channelRead(ReadTimeoutHandler.java:150), io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:332), io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:318), io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:787), io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125), io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:507), io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:464), io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:378), io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:350), io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116), java.lang.Thread.run(Thread.java:745)], TIMED_WAITING Server Infinisleeper: [java.lang.Thread.sleep(Native Method), net.minecraft.server.v1_8_R1.ThreadSleepForever.run(SourceFile:64)], TIMED_WAITING Snooper Timer: [java.lang.Object.wait(Native Method), java.util.TimerThread.mainLoop(Timer.java:552), java.util.TimerThread.run(Timer.java:505)], TIMED_WAITING Timer-0: [java.lang.Object.wait(Native Method), java.util.TimerThread.mainLoop(Timer.java:552), java.util.TimerThread.run(Timer.java:505)], RUNNABLE Server Watchdog: [java.lang.Thread.dumpThreads(Native Method), java.lang.Thread.getAllStackTraces(Thread.java:1603), org.bukkit.craftbukkit.v1_8_R1.CraftCrashReport.call(CraftCrashReport.java:29), net.minecraft.server.v1_8_R1.CrashReportSystemDetails.a(SourceFile:78), net.minecraft.server.v1_8_R1.CrashReport.h(CrashReport.java:43), net.minecraft.server.v1_8_R1.CrashReport.<init>(CrashReport.java:32), net.minecraft.server.v1_8_R1.ThreadWatchdog.run(SourceFile:57), java.lang.Thread.run(Thread.java:745)], TIMED_WAITING Timer-1: [java.lang.Object.wait(Native Method), java.util.TimerThread.mainLoop(Timer.java:552), java.util.TimerThread.run(Timer.java:505)],}
+   Recent tasks from 12841-12871{PermissionsEx:ru.tehkode.permissions.bukkit.PermissionsEx$2@31,}
+	Profiler Position: N/A (disabled)
+	Player Count: 2 / 20; [EntityPlayer['die_mandarine'/56, l='world', x=-11.52, y=64.00, z=2.30](die_mandarine at -11.521801359780362,64.0,2.300000011920926), EntityPlayer['Die_Rechte_Socke'/75869, l='world', x=-44.36, y=64.00, z=-37.46](Die_Rechte_Socke at -44.35721378120318,64.0,-37.45650297118191)]
+	Is Modded: Definitely; Server brand changed to 'CraftBukkit'
+	Type: Dedicated Server (map_server.txt)
